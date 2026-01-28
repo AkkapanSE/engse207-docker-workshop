@@ -12,7 +12,7 @@ const API_BASE = '/api';
 // ตั้งค่า USE_MOCK = true เพื่อทดสอบ UI โดยไม่ต้องรอ Backend
 // เมื่อ Backend พร้อมแล้ว ให้เปลี่ยนเป็น false
 
-const USE_MOCK = true;  // ⬅️ เปลี่ยนเป็น false เมื่อ merge แล้ว
+const USE_MOCK = false;  // ⬅️ เปลี่ยนเป็น false เมื่อ merge แล้ว
 
 // Mock Data - ใช้ format เดียวกับ API Contract
 const MOCK_CONTACTS = [
