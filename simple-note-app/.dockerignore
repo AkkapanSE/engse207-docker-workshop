@@ -1,0 +1,34 @@
+# ============================================
+# 📋 .dockerignore
+# ============================================
+# ไฟล์/โฟลเดอร์ที่ไม่ต้อง copy เข้า Docker image
+# เหมือน .gitignore แต่สำหรับ Docker
+
+# Dependencies (จะ npm install ใหม่ใน container)
+node_modules
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment files (อาจมี secrets)
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode
+.idea
+
+# Git
+.git
+.gitignore
+
+# Docker files (ไม่ต้อง copy ตัวเอง)
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# OS files
+.DS_Store
+Thumbs.db 
