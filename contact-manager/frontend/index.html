@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>📇 Contact Manager by AKP2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📇 Contact Manager</h1>
+            <div id="mockIndicator" class="mock-indicator" style="display: none;">🔶 MOCK MODE (AKP2)</div>
+        </header>
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="🔍 ค้นหาชื่อ...">
+            <button class="btn btn-primary" onclick="showAddForm()">➕ เพิ่มรายชื่อ</button>
+        </div>
+        <div id="addForm" class="form-container" style="display: none;">
+            <form onsubmit="addContact(event)">
+                <input type="text" id="name" required placeholder="ชื่อ *">
+                <input type="email" id="email" placeholder="Email">
+                <input type="text" id="phone" placeholder="เบอร์โทร">
+                <button type="submit" class="btn btn-success">💾 บันทึก</button>
+                <button type="button" onclick="hideAddForm()">❌ ยกเลิก</button>
+            </form>
+        </div>
+        <div id="contactList" class="contact-list"></div>
+        <div id="statusMessage" class="status-message"></div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
